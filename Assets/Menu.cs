@@ -29,10 +29,4 @@ public class Menu : MonoBehaviour
     {
         Panel.SetActive(false);
     }
-
-    public void CambiarEscena()
-    {
-        SceneManager.LoadScene("", LoadSceneMode.Single);
-    }
-
 }

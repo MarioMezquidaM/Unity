@@ -8,7 +8,7 @@ public class Dialogo2 : MonoBehaviour
 
     public TextMeshProUGUI textD;
 
-    [TextArea (3,30)]
+    [TextArea (3,50)]
 
     public string[] parrafos;
     int index;
