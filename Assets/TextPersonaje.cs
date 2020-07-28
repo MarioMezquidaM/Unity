@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TextPersonaje : MonoBehaviour
 {
 
-    string frase = "¡Hola! Soy el Almatar tu compañero en esta aventura              ¿Estás preparado?";
+    string frase = "¡Hola! Soy el Almatar \n tu compañero en esta \n aventura \n ¿Estás preparado?";
     public Text texto;
 
    

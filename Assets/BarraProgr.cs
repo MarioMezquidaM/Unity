@@ -4,39 +4,71 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class BarraProgr : MonoBehaviour {
-    Slider Barra;
 
-    public float max;
-    public float act;
-    public Text valorString;
-    int cont = 0;
+    public GameObject imagenCarga;
+    public Slider Barra;
 
-    void Awake(){
-        Barra = GetComponent<Slider> ();
+    private AsyncOperation asyn;
+
+    //public float max;
+    //public float act;
+    //public Text valorString;
+    //int cont = 0;
+
+    //void Awake()
+    //{
+    //    Barra = GetComponent<Slider>();
+    //}
+
+    public void ClickCarga(int nivel)
+    {
+        imagenCarga.SetActive(true);
+        StartCoroutine(Loadlevelslider(nivel));
+        
+        //funcionPrueba();
     }
 
-    void Start(){
-        funcionPrueba();
-    }
-
-    void Update(){
-        //ActualizarValorBarra(max, act);
-    }
-
-    void ActualizarValorBarra(float valorMax, float valorAct){
-        float porcentaje;
-        porcentaje = valorAct / valorMax;
-        Barra.value = porcentaje;
-        valorString.text = porcentaje*100 + "%";
-    }
-
-    void funcionPrueba(){
-        if (cont <= 10){
-            ActualizarValorBarra(10, cont);
-            cont++;
-        } else {
-            cont = 0;
+    IEnumerator Loadlevelslider(int nivel)
+    {
+        asyn = Application.LoadLevelAsync(nivel);
+        while (!asyn.isDone)
+        {
+            Barra.value = asyn.progress;
+            yield return null;
+            //yield return new WaitForSeconds(5.1f);
         }
-        Invoke("funcionPrueba", 1f) ;
     }
+
+    //void Start()
+    //{
+
+    //    funcionPrueba();
+    //}
+
+    //void Update()
+    //{
+    //    //ActualizarValorBarra(max, act);
+    //}
+
+    //void ActualizarValorBarra(float valorMax, float valorAct)
+    //{
+    //    float porcentaje;
+    //    porcentaje = valorAct / valorMax;
+    //    Barra.value = porcentaje;
+    //    valorString.text = porcentaje * 100 + "%";
+    //}
+
+    //void funcionPrueba()
+    //{
+    //    if (cont <= 1)
+    //    {
+    //        ActualizarValorBarra(1, cont);
+    //        cont++;
+    //    }
+    //    else
+    //    {
+    //        cont = 0;
+    //    }
+    //    Invoke("funcionPrueba", 5.0f);
+    //}
 }
