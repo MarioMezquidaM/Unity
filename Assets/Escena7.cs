@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Escena7 : MonoBehaviour
 {
-    string palabra = "ENLACES INFORMATIVOS  Muchas gracias por hacer parte de esta experiencia, para saber mas haz click en estos enlaces:   orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostruidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru ";
+    string palabra = "ENLACES INFORMATIVOS \n\n Muchas gracias por hacer parte de esta experiencia, para \n saber mas haz click en estos enlaces: \n\n  orem ipsum dolor sit amet, consectetur adipiscing elit, \n sed do eiusmod tempor incididunt ut labore et dolore \n magna aliqua. Ut enim ad minim veniam, quis \n nostruidunt ut labore et dolore magna aliqua. Ut enim ad \n minim veniam, quis nostru ";
     public Text texto;
 
 
