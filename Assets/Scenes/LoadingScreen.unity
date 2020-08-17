@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 181662642}
   - component: {fileID: 181662641}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ContinueBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,12 +153,19 @@ RectTransform:
   m_Children:
   - {fileID: 602878910}
   m_Father: {fileID: 1456399122}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Scenes/Portada.unity
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -0.8699951, y: 50}
   m_SizeDelta: {x: 0, y: 30}
+=======
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0.00022125, y: 50.899994}
+  m_SizeDelta: {x: 515.99963, y: 30}
+>>>>>>> c1e63884ffdad5ac33058db669adeb90d1987a11:Assets/Scenes/LoadingScreen.unity
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &181662641
 MonoBehaviour:
@@ -262,7 +269,7 @@ GameObject:
   - component: {fileID: 261019631}
   - component: {fileID: 261019630}
   m_Layer: 5
-  m_Name: Player1
+  m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -327,14 +334,14 @@ RectTransform:
   m_GameObject: {fileID: 261019629}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 71.38226, y: 61.839775, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
-  m_Father: {fileID: 1456399122}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -181, y: -87}
+  m_AnchoredPosition: {x: -6.19, y: -2.82}
   m_SizeDelta: {x: 2.5899963, y: 3.1600037}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &427370307
@@ -349,7 +356,7 @@ GameObject:
   - component: {fileID: 427370310}
   - component: {fileID: 427370309}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -611,7 +618,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -666,7 +673,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 289.52832
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -786,7 +793,7 @@ GameObject:
   - component: {fileID: 729631814}
   - component: {fileID: 729631813}
   m_Layer: 5
-  m_Name: Image
+  m_Name: LoadingBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -805,7 +812,7 @@ RectTransform:
   m_Children:
   - {fileID: 448294873}
   m_Father: {fileID: 1456399122}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -1040,7 +1047,7 @@ GameObject:
   - component: {fileID: 1434513924}
   - component: {fileID: 1434513923}
   m_Layer: 5
-  m_Name: Image
+  m_Name: TalkBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1172,8 +1179,8 @@ Canvas:
   m_GameObject: {fileID: 1456399118}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1197,11 +1204,10 @@ RectTransform:
   m_Children:
   - {fileID: 427370308}
   - {fileID: 1434513922}
-  - {fileID: 261019631}
   - {fileID: 181662640}
   - {fileID: 729631812}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
