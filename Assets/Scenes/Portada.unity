@@ -209,7 +209,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -425,6 +425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 448294873}
   - component: {fileID: 448294875}
+  - component: {fileID: 448294874}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -454,6 +455,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 22.160553}
   m_SizeDelta: {x: 160.90076, y: 44.321106}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &448294874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448294872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b581f9aa9964de440af41cfb25e972a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max: 0
+  act: 0
+  valorString: {fileID: 1051906208}
 --- !u!114 &448294875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1163,8 +1179,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f3948e57a7ee714c876473cb8b2c1f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velParrafo: 0
   imagenCarga: {fileID: 729631811}
-  Barra: {fileID: 448294875}
+  boton: {fileID: 181662639}
+  Barraa: {fileID: 448294872}
 --- !u!1 &1527606634
 GameObject:
   m_ObjectHideFlags: 0
