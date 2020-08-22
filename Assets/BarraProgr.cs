@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class BarraProgr : MonoBehaviour {
 
-    public float velParrafo;
+    //public float velParrafo;
+
     public GameObject imagenCarga;
     public GameObject boton;
     public GameObject Barraa;
@@ -29,11 +30,12 @@ public class BarraProgr : MonoBehaviour {
         
         while (!asyn.isDone)
         {
-            //float progress = Mathf.Clamp01(asyn.progress / -9.9f);
+            
             Barra.value = asyn.progress;
 
-            //yield return null;
-            yield return new WaitForSeconds(velParrafo);
+            
+            //yield return new WaitForSeconds();
+            yield return null;
         }
 
     }
@@ -41,7 +43,7 @@ public class BarraProgr : MonoBehaviour {
     void Start()
     {
         boton.SetActive(true);
-        //funcionPrueba();
+        
         imagenCarga.SetActive(true);
         Barraa.SetActive(true);
     }

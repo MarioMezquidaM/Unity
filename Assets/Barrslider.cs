@@ -7,9 +7,8 @@ using UnityEngine.UI;
 public class Barrslider : MonoBehaviour
 {
    
-    //public GameObject imagenCarga;
+    
     Slider Barra;
-
     public float max;
     public float act;
     public Text valorString;
