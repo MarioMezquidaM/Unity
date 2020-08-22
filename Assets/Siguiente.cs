@@ -16,13 +16,15 @@ public class Siguiente : MonoBehaviour
 
     void Start()
     {
+        panelDialogo.SetActive(true);
         panelDialogo2.SetActive(false);
         botonQuitar.SetActive(false);
+        
     }
 
     void Update()
     {
-        botonContinue.SetActive(true);
+        //botonContinue.SetActive(true);
     }
     
     public void ActivarSiguienteP()
